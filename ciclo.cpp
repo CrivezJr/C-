@@ -25,7 +25,7 @@ int main()
 			ipotenusa = sqrt(pow(cateto_a, 2.0) + pow(cateto_b, 2.0));
 			cout << "L'ipotenusa e' uguale a: " << ipotenusa;
 			system("cls");
-			return 0;
+			
 		
 		}
 		
@@ -47,7 +47,7 @@ int main()
 			c= sqrt(pow(b-a, 3.0));
 			cout << "c= radice(elevamento alla 3(b-a)= " << c;
 			system("cls");
-			return 0;
+			
 		}
 		
 		if (Esercizio == "3")
@@ -105,7 +105,7 @@ int main()
 					}	
 				}
 			}
-			return 0;
+		
 		}
 			
 		if (Esercizio== "4")
@@ -125,7 +125,7 @@ int main()
 			cout << "Il valore " << y << " ha assunto il valore " << x << endl;
 			cout << "Il valore " << x << " ha assunto il valore " << y << endl;
 			system("cls");
-			return 0;
+			
 		}
 	}
 return 0;
