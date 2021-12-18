@@ -1,4 +1,4 @@
-//ciclo
+//ciclo C++
 #include <iostream>
 #include <string>
 #include <cmath>
