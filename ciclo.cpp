@@ -1,9 +1,10 @@
-//ciclo C++
+//ciclo
 #include <iostream>
 #include <string>
 #include <cmath>
 using namespace std;
-int main()
+int main ()
+
 { 
 	
 	while(1)
@@ -11,7 +12,7 @@ int main()
 		
 		string Esercizio = "";
 		
-		cout << "inserisci il numero dell'esercizio: " <<endl;
+		cout << "inserisci il numero dell'esercizio (un numero intero tra 1 e 6): " <<endl;
 		cin >> Esercizio;
 		
 		if (Esercizio== "1")
@@ -25,7 +26,7 @@ int main()
 			ipotenusa = sqrt(pow(cateto_a, 2.0) + pow(cateto_b, 2.0));
 			cout << "L'ipotenusa e' uguale a: " << ipotenusa;
 			system("cls");
-			
+			return 0;
 		
 		}
 		
@@ -47,7 +48,7 @@ int main()
 			c= sqrt(pow(b-a, 3.0));
 			cout << "c= radice(elevamento alla 3(b-a)= " << c;
 			system("cls");
-			
+			return 0;
 		}
 		
 		if (Esercizio == "3")
@@ -105,7 +106,7 @@ int main()
 					}	
 				}
 			}
-		
+			return 0;
 		}
 			
 		if (Esercizio== "4")
@@ -125,7 +126,58 @@ int main()
 			cout << "Il valore " << y << " ha assunto il valore " << x << endl;
 			cout << "Il valore " << x << " ha assunto il valore " << y << endl;
 			system("cls");
+			return 0;
+		}
+		
+		if(Esercizio == "5")
+		{
+			string o= "";
 			
+			cout << "Inserire l'incognita(una tra s, v e t)" << endl;
+			cin >> o;
+			
+			if (o == "s")
+			{
+				double s,v,t;
+				cout << "Inserire t(tempo) in secondi  ";
+				cin >> t;
+				cout << "Inserire v(velocita') in metri al secondo  ";
+				cin >> v;
+				s= v*t;
+				cout << "lo spazio equivale a " << s;
+			}
+			if (o == "t")
+			{
+				double s,v,t;
+				cout << "Inserire s(spazio) in metri  ";
+				cin >> s;
+				cout << "Inserire v(velocita') in metri al secondo  ";
+				cin >> v;
+				t= s / v;
+				cout << "il tempo equivale a " << t;
+			}
+			if (o == "v")
+			{
+				double s,v,t;
+				cout << "Inserire t(tempo) in secondi  ";
+				cin >> t;
+				cout << "Inserire s(spazio) in metri  ";
+				cin >> s;
+				v= s / t;
+				cout << "la velocita' equivale a " << v;
+			}
+			if (Esercizio == "6")
+			{
+				cout << "Quanto pesa Crive?";
+				int peso;
+				cin >> peso;
+				while (peso < 100)
+				{
+					cout << "Noooooooo";
+				}
+				cout << "ESATTOOOOOOO";
+			}
+		return 0;
 		}
 	}
 }
