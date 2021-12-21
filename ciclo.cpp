@@ -24,7 +24,7 @@ int main ()
 			cout << "inserisci il secondo cateto : ";
 			cin >> cateto_b;
 			ipotenusa = sqrt(pow(cateto_a, 2.0) + pow(cateto_b, 2.0));
-			cout << "L'ipotenusa e' uguale a: " << ipotenusa;		
+			cout << "L'ipotenusa e' uguale a: " << ipotenusa << endl;		
 		}
 		
 		if (Esercizio== "2")
@@ -43,7 +43,7 @@ int main ()
 				b=temp;
 			}
 			c= sqrt(pow(b-a, 3.0));
-			cout << "c= radice(elevamento alla 3(b-a)= " << c;
+			cout << "c= radice (elevamento alla 3(b-a)) = " << c << endl;
 		}
 		
 		if (Esercizio == "3")
@@ -64,7 +64,7 @@ int main ()
 				if (b == "No")
 					{
 						cout << "va bene fallo"<< endl;
-						cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!";
+						cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!" << endl;
 					}
 				if (b == "Si")
 				{
@@ -73,7 +73,7 @@ int main ()
 					if (b == "No")
 					{
 						cout << "va bene fallo"<< endl;
-						cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!";
+						cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!" << endl;
 					}
 					else
 					{
@@ -82,7 +82,7 @@ int main ()
 						if (b == "No")
 						{
 							cout << "va bene fallo"<< endl;
-							cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!";
+							cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!" << endl;
 						}
 						else
 						{
@@ -91,11 +91,11 @@ int main ()
 							if (b == "No")
 							{
 								cout << "va bene fallo"<< endl;
-								cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!";
+								cout << "ma se la vedi camminare e sorridere con un altro" << endl << "FOCESS E CAMMIN!!!!!!!" << endl;
 							}
 							else
 							{
-								cout << "Allora sei una guerriera";
+								cout << "Allora sei una guerriera" << endl;
 							}
 						}
 					}	
@@ -111,10 +111,10 @@ int main ()
 			
 			int temp,x,y;
 			cout << "inserisci due numeri: ";
-			cin>> x;
-			cout << x;
+			cin>> x ;
+			cout << "Il valore di x e' :"<< x << endl;
 			cin>> y;
-			cout << y;
+			cout << "Il valore di x e' :" << y << endl;
 			temp = x;
 			x = y;
 			y = temp;
@@ -171,6 +171,26 @@ int main ()
 				cin >> peso;
 			}
 			cout << "ESATTOOOOOOO" << endl;
+		}
+		if (Esercizio == "7")
+		{
+			int a,b,c;
+			cout << "Inserisci un numero (metti 0 per terminare): ";
+			cin >> a;
+			while (a != 0)
+			{
+				cout << "Inserisci un altro numero" << endl;
+				cin >> a;
+				if (a == 0)
+				{ 
+					a = c;
+				}
+				if (a != 0)
+				{
+					b = a;
+				}
+			}
+			cout << b << endl << endl;
 		}
 	}
 }
