@@ -24,10 +24,7 @@ int main ()
 			cout << "inserisci il secondo cateto : ";
 			cin >> cateto_b;
 			ipotenusa = sqrt(pow(cateto_a, 2.0) + pow(cateto_b, 2.0));
-			cout << "L'ipotenusa e' uguale a: " << ipotenusa;
-			system("cls");
-			return 0;
-		
+			cout << "L'ipotenusa e' uguale a: " << ipotenusa;		
 		}
 		
 		if (Esercizio== "2")
@@ -47,8 +44,6 @@ int main ()
 			}
 			c= sqrt(pow(b-a, 3.0));
 			cout << "c= radice(elevamento alla 3(b-a)= " << c;
-			system("cls");
-			return 0;
 		}
 		
 		if (Esercizio == "3")
@@ -106,7 +101,7 @@ int main ()
 					}	
 				}
 			}
-			return 0;
+
 		}
 			
 		if (Esercizio== "4")
@@ -125,8 +120,6 @@ int main ()
 			y = temp;
 			cout << "Il valore " << y << " ha assunto il valore " << x << endl;
 			cout << "Il valore " << x << " ha assunto il valore " << y << endl;
-			system("cls");
-			return 0;
 		}
 		
 		if(Esercizio == "5")
@@ -166,18 +159,18 @@ int main ()
 				v= s / t;
 				cout << "la velocita' equivale a " << v;
 			}
-			if (Esercizio == "6")
+		}
+		if (Esercizio == "6")
+		{
+			cout << "Quanto pesa Crive?";
+			int peso;
+			cin >> peso;
+			while (peso < 100)
 			{
-				cout << "Quanto pesa Crive?";
-				int peso;
+				cout << "Noooooooo!     " << "Prova con un altro peso!" << endl;
 				cin >> peso;
-				while (peso < 100)
-				{
-					cout << "Noooooooo";
-				}
-				cout << "ESATTOOOOOOO";
 			}
-		return 0;
+			cout << "ESATTOOOOOOO" << endl;
 		}
 	}
 }
