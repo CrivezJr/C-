@@ -1,7 +1,4 @@
-//ciclo
-#include <iostream>
-#include <string>
-#include <cmath>
+>
 using namespace std;
 int main ()
 
@@ -12,7 +9,9 @@ int main ()
 		
 		string Esercizio = "";
 		
-		cout << "inserisci il numero dell'esercizio (un numero intero tra 1 e 6): " <<endl;
+		cout << "inserisci il numero dell'esercizio (un numero intero tra 1 e 8):" << endl << " Esercizio 1= Pitagora " << endl << " Esercizio 2= Inverto variabili " << endl; 
+		cout << " Esercizio 3= Vuoi farla ingelosirla? " << endl << " Esercizio 4= Inverto variabili 2" << endl << " Esercizio 5= Calcolo spazio tempo e velocita(fisica)"<< endl;
+		cout << " Esercizio 6= Quanto pesa Crive? " << endl << " Esercizio 7= Utilizzo il while" << endl << " Esercizio 8= Utilizzo il for"<< endl;
 		cin >> Esercizio;
 		
 		if (Esercizio== "1")
@@ -124,6 +123,7 @@ int main ()
 		
 		if(Esercizio == "5")
 		{
+			system("cls");
 			string o= "";
 			
 			cout << "Inserire l'incognita(una tra s, v e t)" << endl;
@@ -157,13 +157,14 @@ int main ()
 				cout << "Inserire s(spazio) in metri  ";
 				cin >> s;
 				v= s / t;
-				cout << "la velocita' equivale a " << v;
+				cout << "la velocita' equivale a " << v << endl;
 			}
 		}
 		if (Esercizio == "6")
 		{
-			cout << "Quanto pesa Crive?";
-			int peso;
+			system("cls");
+			cout << "Quanto pesa Crive in Kg?";
+			float peso;
 			cin >> peso;
 			while (peso < 100)
 			{
@@ -174,6 +175,7 @@ int main ()
 		}
 		if (Esercizio == "7")
 		{
+			system("cls");
 			int a,b,c;
 			cout << "Inserisci un numero (metti 0 per terminare): ";
 			cin >> a;
@@ -190,7 +192,35 @@ int main ()
 					b = a;
 				}
 			}
-			cout << b << endl << endl;
+			cout << "Mostra l'ultimo numero  " << b << endl << endl;
+		}
+		if (Esercizio == "8")
+		{
+			system ("cls");
+			float o;
+			for (int i=1; i<= 20; i++)
+			{
+				cout << "inserisci 20 numeri uno alla volta";
+				cin >> o;
+				if (o >= 37)
+				cout << o*3 << endl;
+				else 
+				{
+					cout << o*67 << endl;
+				}
+			}
+		}
+		if (Esercizio == "9")
+		{
+			system ("cls");
+			// creo due for annidati per un totale di 100 ripetizioni
+			for (int r=1; r<=10; r++)
+			{
+				for(int c=1; c<=10; c++)
+				{
+					cout << setw(5) << r*c << endl;
+				}
+			}
 		}
 	}
 }
