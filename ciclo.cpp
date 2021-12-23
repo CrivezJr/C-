@@ -1,4 +1,8 @@
->
+//ciclo
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <iomanip>
 using namespace std;
 int main ()
 
@@ -217,9 +221,8 @@ int main ()
 			for (int r=1; r<=10; r++)
 			{
 				for(int c=1; c<=10; c++)
-				{
-					cout << setw(5) << r*c << endl;
-				}
+				cout << setw(5) << r*c;
+				cout << endl;
 			}
 		}
 	}
